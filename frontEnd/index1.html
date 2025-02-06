@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batsi Nyakotyo</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- header area -->
+    <header id="header">
+        <div class="row m-0">
+            <div class="col-3 bgcolor-black">
+                <nav class="primary-nav navbar-expand-md">
+                    <div class="site-title text-center text-light py-5">
+                        <a href="#" class="navbar-brand font-staat font-size-40">Resume</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <a href="#home" class="nav-item nav-link text-white-50 font-os font-size-16 active">Home</a>
+                        <a href="#about_me" class="nav-item nav-link text-white-50 font-os font-size-16 active">About Me</a>
+                        <a href="#skills" class="nav-item nav-link text-white-50 font-os font-size-16 active">Skills</a>
+                        <a href="#certs" class="nav-item nav-link text-white-50 font-os font-size-16 active">Certifications</a>
+                        <a href="#experience" class="nav-item nav-link text-white-50 font-os font-size-16 active">Work Experience</a>
+                        <a href="#Projects" class="nav-item nav-link text-white-50 font-os font-size-16 active">Projects</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- #header area -->
+
+    <main id="site-main">
+        <div class="row m-0">
+            <div class="col-md-9 offset-md-3 px-0">
+
+                <!-- site-banner area -->
+                <section class="site-banner " id="home">
+                    <div class="banner-area">
+                        <div class="author text-center">
+                            <div class="author-img"></div>
+                            <h1 class="text-black font-staat font-size-40 text-uppercase py-3">Batsi Nyakotyo</h1>
+                            <h5 class="text-black font-ram font-size-27">A <span id="typed"></span></h5>
+                            <div class="social-buttons mt-4">
+                                <a href="https://www.linkedin.com/in/batsi-nyakotyo/" target="_blank" class="btn btn-linkedin mr-2">
+                                    <i class="fab fa-linkedin-in"></i> LinkedIn
+                                </a>
+                                <a href="https://github.com/bdnkyoto" target="_blank" class="btn btn-github">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                            <div class="counter-number" active></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- #site-banner area -->
+
+                <!-- about me area -->
+                <section class="about py-4 px-5 bgcolor-gray id="about_me">
+                    <div class="me">
+                        <h1 class="text-uppercase font-staat font-size-34">About Me</h1>
+                    </div>
+                    <div class="row m-0">
+                        <div class="col-sm-5 pl-0 d-flex align-items-center">
+                            <div id="lottie-animation" class="lottie-animation"></div>
+                        </div>
+                        <div class="col-sm-6 d-flex flex-column justify-content-center">
+                            <h6 class="text-uppercase font-os font-size-16 text-muted">About Me</h6>
+                            <h5 class="font-ram font-size-20 py-2">A <span id="typed_2"></span></h5>
+                            <p class="font-ram text-black-50 py-2">
+                                In my final semester of college I am currently focused on mastering the fundamentals of cloud principles,Devops and Systems architecture,
+                                with a particular emphasis on Cloud Computing (AWS),programming, Unix systems, networking,
+                                and other essential tools. My goal is to transition into a Cloud Engineering role where
+                                I can leverage newly found Skills to help organizations build and maintain secure, scalable, and reliable cloud infrastructure.
+                            </p>
+                            <button type="submit" onclick="window.open('./assets/NyakotyoResume.pdf')"
+                                class="btn btn-dark text-uppercase mr-3 download-cv-btn">Download CV</button>
+                            <div class="d-flex flex-row flex-wrap justify-content-between py-4">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- #about me area -->
+
+                <!-- ability -->
+                <section class="skill px-4 py-5" id="skills">
+                    <div class="ability">
+                        <h1 class="text-uppercase font-staat font-size-34">My skills</h1>
+                    </div>
+                    <div class="row m-0">
+                        <div class="col-sm-5 pl-0 d-flex align-items-center">
+                            <div id="lottie-animation-2" class="lottie-animation-2"></div>
+                        </div>
+                        <div class="col-sm-6 d-flex flex-column justify-content-center">
+                            <h3 class="font-ram font-size-20 py-2">Knowledge</h3>
+                            <ul class="font-ram text-black-50 py-2">
+                                <li>AWS, TCP/IP, C++, PowerShell, UNIX, Java, Docker, Wireshark, Splunk, Automation, VMware, Containerization </li>
+                            </ul>
+                            <ul class="list-inline dev-icons">
+                                <li class="list-inline-item">
+                                    <i class="fa-brands fa-java"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fab fa-aws"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fa-solid fa-database"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fa-brands fa-linux"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fa-brands fa-git"></i>
+                                </li>
+                            </ul>
+                            <h3 class="font-ram font-size-20 py-2">Currently studying</h3>
+                            <ul class="font-ram text-black-50 py-2">
+                                <li>AWS architecture,Unix Sysadmin, IOT programming, Computer networking.</li>
+                            </ul>
+                        </ul>
+                        <ul class="list-inline dev-icons">
+                            <li class="list-inline-item">
+                                <i class="fab fa-aws"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fa-brands fa-linux"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fa-brands fa-python"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fa-solid fa-server"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </section>
+                <!-- #ability -->
+
+                <!-- certs -->
+                <section class="certs px-4 py-5" id="certs">
+                    <div class="section">
+                        <h1 class="text-uppercase font-staat font-size-34"><i class="fas fa-award"></i> Certifications</h1>
+                    </div>
+                    <div class="w-100">
+                        <ul class="fa-ul mb-0 font-ram font-size-16 text-black-50 pb-3">
+                            <li>
+                                <i class="fa-li fa fa-trophy text-warning"></i>
+                                AWS Certified Cloud Practitioner (CCP - CLF02)
+                            </li>
+                        </ul>
+                        <div class="badge-container">
+                            <img src="assets/image.png" alt="AWS CCP Badge" width="200" class="badge-image">
+                        </div>
+                        <ul class="fa-ul mb-0 font-ram font-size-16 text-black-50 pb-3">
+                            <li>
+                                <i class="fa-li fa fa-trophy text-warning"></i>
+                                AWS Certified Solutions Architect Associate (SAA - C03)
+                                -In progress
+                            </li>
+
+                    </div>
+                </section>
+                <!-- #certs -->
+
+                <!-- Work Experience/Responsibilities Section -->
+                <section class="experience px-4 py-5" id="experience">
+                    <div class="section">
+                        <h2 class="text-uppercase font-staat font-size-34">Experience</h2>
+                        <h3 class="font-ram font-size-20">Arizona State University</h3>
+                        <p class="font-ram font-size-16 text-black-50">
+                            Technology Consultant - Dec/2023 - Present<br>
+                        </p>
+                        <h3 class="font-ram font-size-20 mt-4">Responsibilities</h3>
+                        <ul class="font-ram text-black-50">
+                            <li>Maintained 99.8% uptime for 200+ classrooms and collaborative spaces by proactively monitoring and repairing technology equipment.</li>
+                            <li>Resolved 95% of on-site IT issues within SLA deadlines, improving user satisfaction scores by 45% through effective communication and streamlined troubleshooting. </li>
+                            <li>Reduced repeat incidents by 30% by documenting and standardizing 50+ troubleshooting solutions in ServiceNow.</li>
+
+                            </li>
+                        </ul>
+
+                        <h3 class="font-ram font-size-20">Sponsors for Educational Opportunity(SEO)</h3>
+                        <p class="font-ram font-size-16 text-black-50">
+                            Tech Developer Intern - May/2024 - Aug/2024<br>
+                        </p>
+                        <h3 class="font-ram font-size-20 mt-4">Responsibilities</h3>
+                        <ul class="font-ram text-black-50">
+                            <li>Executed multi-cloud deployment through Terraform to enhance CI/CD pipelines in both AWS and Azure environments, achieving a
+                                40% reduction in downtime during critical release cycles while boosting overall deployment efficiency.
+                                </li>
+                            <li>Delivered 4 full-stack applications (Python/Flask, MySQL, JavaScript) in SCRUM teams focused on Agile methodologies, accelerating project completion by 20% compared to prior cycles. </li>
+                            <li>Reduced code merge conflicts by 50% by implementing Git best practices and automating workflows with Bash scripting across 10+ repositories. </li>
+                            <li>Automated configuration of 5+ servers using Ansible, ensuring consistent deployment and reducing manual setup time by 8 hours/month. </li>
+
+                            </li>
+                        </ul>
+
+                        <h3 class="font-ram font-size-20">Arizona State University</h3>
+                        <p class="font-ram font-size-16 text-black-50">
+                            Data Verification Specialist - Aug/2023 - Dec/2023.<br>
+                        </p>
+                        <h3 class="font-ram font-size-20 mt-4">Responsibilities</h3>
+                        <ul class="font-ram text-black-50">
+                            <li>Secured 100% compliance with data regulations by implementing Kleopatra encryption for 1,200+ sensitive files monthly.</li>
+                            <li>Reduced manual verification time by 20% (saving 10+ hours weekly) by automating workflows, while processing 5,000+ records with
+                                99.9% accuracy.
+                                </li>
+                            <li>Managed and analyzed extensive data sets with a focus on accuracy, resulting in error-free data processing</li>
+
+                            </li>
+                        </ul>
+
+                        <h3 class="font-ram font-size-20">NetFusion</h3>
+                        <p class="font-ram font-size-16 text-black-50">
+                            TECHNOLOGY SUPPORT SPECIALIST - Jan/2019 Feb 2022<br>
+                        </p>
+                        <h3 class="font-ram font-size-20 mt-4">Responsibilities</h3>
+                        <ul class="font-ram text-black-50">
+                            <li>Resolved 300+ hardware/software tickets quarterly, reducing average resolution time by 35% and user downtime by 50%.</li>
+                            <li>Maintained 99.5% uptime for Linux servers and Active Directory systems, supporting 500+ end-users.</li>
+                            <li>Improved IT team productivity by 25% by migrating 20+ projects to Jira/Confluence, reducing miscommunications by 40%.</li>
+
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="Projects px-4 py-5" id="Projects">
+                    <div class="section">
+                        <h2 class="text-uppercase font-staat font-size-34">Projects</h2>
+
+
+                        <h3 class="font-ram font-size-20 mt-4">ENTERPRISE ACTIVE DIRECTORY HOMELAB</h3>
+                        <ul class="font-ram text-black-50">
+                            <li>Utilized Hyper-V to create a virtual switch, enabling communication between Windows 10 and Windows Server 2022 VMs, including static and DHCP IP assignments and firewall adjustments. </li>
+                            <li>Secured 100% of virtualized systems by deploying RBAC and Group Policies across 10+ Windows VMs, preventing unauthorized access. </li>
+                            <li>Reduced AWS deployment time by 50% using Terraform to automate multi-region security models (IAM, VPC, EC2).</li>
+                        </ul>
+                        <h3 class="font-ram font-size-20 mt-4">AWS PROOF OF CONCEPT</h3>
+                        <ul class="font-ram text-black-50">
+                            <li>Deployed a secure, load-balanced web application on AWS to demonstrate application readiness for migration to the cloud. </li>
+                            <li>Implemented security best practices by using Terraform to manage firewalls, network devices, and automated deployments.</li>
+                            <li>Configured Server EC2 instances with proper security groups, managing traffic via SSH, HTTP, HTTPS, and RDP protocols.</li>
+                        </ul>
+                        <h3 class="font-ram font-size-20 mt-4">Stock Trading Web application</h3>
+                        <ul class="font-ram text-black-50">
+                            <li></li>
+                            <li>Implemented security best practices by using Terraform to manage firewalls, network devices, and automated deployments.</li>
+                            <li>Configured Server EC2 instances with proper security groups, managing traffic via SSH, HTTP, HTTPS, and RDP protocols.</li>
+                        </ul>
+                        <h3 class="font-ram font-size-20 mt-4">Ai Raspberry Pi CookBook</h3>
+                        <ul class="font-ram text-black-50">
+                            <li>Developed an AI-powered recipe generator using Raspberry Pi, integrating computer vision (OpenCV) and TensorFlow Lite to identify ingredients and suggest recipes based on user input.</li>
+                            <li>Built a Flask-based web interface for real-time recipe recommendations, leveraging the Spoonacular API to fetch and display personalized meal ideas.</li>
+                            <li>Configured Server EC2 instances with proper security groups, managing traffic via SSH, HTTP, HTTPS, and RDP protocols.</li>
+                        </ul>
+                    </div>
+
+                </section>
+                <!-- #Work Experience/Responsibilities Section -->
+
+
+                <!--footer-->
+                <footer id="footer" class="pt-3 px-3">
+                    <div id="contact_us">
+                        <div class="row py-3">
+                            <div class="col-sm-4 my-4 text-center">
+
+                            </div>
+                            <div class="col-sm-4 my-4 text-center">
+                                <div class="social-buttons">
+                                    <a href="https://www.linkedin.com/in/batsi-nyakotyo/" target="_blank" class="btn btn-linkedin mr-2">
+                                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                                    </a>
+                                    <a href="https://github.com/bdnkyoto" target="_blank" class="btn btn-github">
+                                        <i class="fab fa-github"></i> GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- #footer -->
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+po0T4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+        integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('lottie-animation'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'https://lottie.host/006ee53e-c0c9-4228-9522-0e33db2c6c8d/WLgTSMosDM.json'
+        });
+
+        var animation2 = lottie.loadAnimation({
+            container: document.getElementById('lottie-animation-2'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'https://lottie.host/1cda73fa-ff42-41bc-ab01-1f5df7fb2afe/roS0j2hQLO.json'
+        });
+    </script>
+    <script src="./script.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>

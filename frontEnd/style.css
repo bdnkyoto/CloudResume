@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Rambla|Staatliches&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Reset default styles */
+body, h1, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Root variables */
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-border: #ffffff;
+    --color-blue: #312450; /* Update with your desired blue color */
+    --color-linkedin: #333;
+    --color-github: #333;
+    --font-staat: 'Staatliches', cursive;
+    --font-os: 'Oswald', sans-serif;
+    --font-ram: 'Rambla', sans-serif;
+}
+
+/* Global typography classes */
+.font-staat {
+    font: normal 400 18px var(--font-staat);
+}
+
+.font-os {
+    font: normal 300 18px var(--font-os);
+}
+
+.font-ram {
+    font: normal bold 18px var(--font-ram);
+}
+
+.font-size-40 {
+    font-size: 40px;
+}
+
+.font-size-34 {
+    font-size: 34px;
+}
+
+.font-size-27 {
+    font-size: 27px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+/* Global utility classes */
+.bgcolor-black {
+    background-color: var(--color-blue); /* Update with your desired background color */
+}
+
+/* Header styles */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transition: left .5s ease;
+}
+
+#header nav {
+    height: 100vh;
+}
+
+#header .site-title .navbar-brand {
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+
+#header .nav-link {
+    margin: .7rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    text-transform: uppercase;
+}
+
+#header .nav-link:hover {
+    color: var(--color-white) !important;
+}
+
+/* Toggle button and checkbox */
+.menu-toggle-checkbox {
+    display: none;
+}
+
+.toggle-button {
+    background: none;
+    color: var(--color-white);
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    border: 1px solid var(--color-border);
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Toggling the header based on checkbox state */
+.menu-toggle-checkbox:checked ~ #header {
+    left: 0 !important;
+}
+
+/* Move header off-screen by default on small screens */
+@media screen and (max-width: 768px) {
+    #header {
+        left: -100%; /* Or use negative width if needed */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .toggle-button {
+        display: none;
+    }
+    #header {
+        z-index: 0;
+    }
+}
+
+/* Typed text color */
+#typed, #typed_2 {
+    color: var(--color-blue); /* Update with your desired text color */
+}
+
+/* Site banner section */
+.site-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure full viewport height */
+    text-align: center;
+    background-color: var(#5e42a6); /* Update with your desired background color */
+}
+
+.banner-area {
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: auto; /* Center align the content within banner-area */
+    text-align: center;
+}
+
+.author .author-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Ensure a circular shape for the image */
+    background: url('./assets/me.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+/* Style for the counter */
+.counter-number {
+    margin-top: 10px;  /* Space above the counter */
+    display: inline-block; /* Adjust size according to content */
+}
+
+/* Style for the container */
+.banner-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    gap: 20px; /* Space between elements */
+}
+
+.social-buttons {
+    margin-top: 10px; /* Adjust margin top to reduce space above the buttons */
+    display: flex;
+    justify-content: center; /* Center align social buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+/* Style for the social buttons */
+.btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0;
+    width: 40%;
+}
+
+.btn i {
+    margin-right: 0.5rem;
+}
+
+.btn-linkedin {
+    background-color: var(--color-linkedin);
+    color: var(--color-white);
+}
+
+.btn-github {
+    background-color: var(--color-github);
+    color: var(--color-white);
+}
+
+.btn-linkedin:hover, .btn-github:hover {
+    opacity: 0.8; /* Adjust opacity on hover as desired */
+}
+
+/* Badge container styling */
+.badge-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center; /* Center align text */
+}
+
+.badge-image {
+    max-width: 100%; /* Ensure image does not overflow */
+    margin-top: 10px;
+    margin-left: auto; /* Center align image */
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .badge-container {
+        display: block; /* Change to block display on larger screens */
+        text-align: left; /* Align text to the left */
+    }
+
+    .badge-image {
+        max-width: 100%; /* Ensure image does not overflow */
+        display: inline-block; /* Ensure inline-block display */
+        margin-top: 10px;
+    }
+}
+
+/* Icons styling */
+ul.list-inline.dev-icons {
+    list-style-type: none; /* Remove default list style */
+    padding: 0;
+    margin-top: 10px; /* Adjust margin as needed */
+    text-align: left; /* Align icons to the left */
+}
+
+ul.list-inline.dev-icons li {
+    display: inline-block; /* Display icons horizontally */
+    margin-right: 15px; /* Adjust spacing between icons */
+    font-size: 2.5rem; /* Adjust icon size */
+    color: var(--color-black);; /* Set initial icon color */
+    vertical-align: middle; /* Align icons vertically with text */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+ul.list-inline.dev-icons li i {
+    vertical-align: middle; /* Align icons vertically */
+}
+
+/* Hover effect */
+ul.list-inline.dev-icons li:hover {
+    color: rgb(157, 0, 255); /* Change icon color on hover */
+}
+
+ul.font-ram.text-white-50 {
+    list-style-type: none; /* Remove default list style */
+    padding-left: 0; /* Remove default left padding */
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+/* Footer styles */
+#footer {
+    padding: 20px 0; /* Adjust top and bottom padding */
+    background-color: #312450; /* Light background color for the footer */
+}
+
+#footer .row {
+    margin: 0;
+}
+
+#footer .col-sm-4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer-title p {
+    margin: 0;
+    padding: 0;
+}
+
+#contact_us p {
+    margin-bottom: 10px; /* Space below the contact text */
+}
+
+.social-buttons {
+    margin-top: 5px; /* Reduce space above social buttons */
+}
+
+.scroll-to-top {
+    display: block;
+    margin: 20px auto; /* Center the button horizontally and add margin */
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--color-blue); /* Adjust background color as needed */
+    color: var(--color-white);
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    cursor: pointer;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    position: relative;
+}
+
+.scroll-to-top:hover {
+    background-color: rgb(170, 0, 255); /* Adjust hover color as needed */
+}
+
+.about_me {
+    color: #5e42a6;
+}
